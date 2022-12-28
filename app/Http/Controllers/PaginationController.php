@@ -11,5 +11,5 @@ class PaginationController extends Controller
         $users = User::paginate(5);
         // dd($users);
         return view('pagination.index',compact('users'));
-    }
+    } 
 }
