@@ -39,7 +39,7 @@
             <div class="col-md-12">
                 <div class="card">
                     <div class="card-header">
-                        <h4>Laravel 8 Custom Pagination<span class="text-danger"></span></h4>
+                        <h4>Custom Pagination<span class="text-danger"></span></h4>
                     </div>
                     <div class="card-footer">
                         <table class="table table-bordered">
@@ -52,15 +52,15 @@
                             </thead>
                             <tbody>
                                 @forelse($users as $key => $user)
-                                <tr>
-                                    <td>{{ ++$key }}</td>
-                                    <td>{{ $user->name }}</td>
-                                    <td>{{ $user->email }}</td>
-                                </tr>
-                                @empty
-                                <tr>
-                                    <p>There Are no Data</p>
-                                </tr>
+                                    <tr>
+                                        <td>{{ ++$key }}</td>
+                                        <td>{{ $user->name }}</td>
+                                        <td>{{ $user->email }}</td>
+                                    </tr>
+                                    @empty
+                                    <tr>
+                                        <p>There Are no Data</p>
+                                    </tr>
                                 @endforelse
                             </tbody>
                         </table>
