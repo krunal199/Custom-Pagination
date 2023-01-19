@@ -14,14 +14,14 @@ Laravel is a web application framework with expressive, elegant syntax. We belie
 ## Steps:
 - composer create-project --prefer-dist laravel/laravel Custom-Pagination
 - Open your .env file and change Database Configuration
-    -
-    "[ DB_CONNECTION=mysql
+    
+    [ DB_CONNECTION=mysql
     DB_HOST=127.0.0.1
     DB_PORT=3306
     DB_DATABASE=here your database name(custom_pagination)
     DB_USERNAME=here database username(root)
-    DB_PASSWORD=here database password()]"
-    -
+    DB_PASSWORD=here database password()]
+    
 -  Create Custom Pagination Template
     create a custom pagination template Use the below command for generate new folder "pagination" on views 
     files resources/views/vendor.
